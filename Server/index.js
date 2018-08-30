@@ -13,6 +13,9 @@ massive(process.env.CONNECTION_STRING).then(dbInstance =>
   app.set("db", dbInstance)
 );
 
+//endpoints
+app.post("/api/clientname", pc.createNewClient);
+
 app.listen(port, () => {
   console.log(`server listening on port ${port}`);
 });

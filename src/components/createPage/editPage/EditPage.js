@@ -19,7 +19,7 @@ const styles = theme => ({
   }
 });
 
-class CreatePage extends Component {
+class EditPage extends Component {
   constructor() {
     super();
 
